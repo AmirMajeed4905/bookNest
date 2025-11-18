@@ -79,7 +79,7 @@ body.loaded #loader {
     list-style: none;
 }
 
-.list li {
+.list li  , a {
     font-size: 20px;
     font-weight: 500;
     /* color: orangered;
@@ -88,13 +88,16 @@ body.loaded #loader {
     text-transform: capitalize;
     transition: color 0.3s;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.list li:hover {
-   
-    text-decoration-color: orangered;
-    color: orangered;
-}
+        .list li a:hover {
+        
+            
+            color: orangered;
+        }
+
+
 
 /* Social Icons */
 .social-icon ul {
