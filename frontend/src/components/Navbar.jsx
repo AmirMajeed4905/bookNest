@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  // Tumhara original JS logic ka React version
   const handleBarsClick = () => {
-    setOpen(!open); // toggle open
+    setOpen(!open);
   };
 
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="logo-word">
             <span style={{ color: "orangered" }}>Book</span>Nest
           </div>
-          {/* Original bars click */}
+
           <div className="bars" onClick={handleBarsClick}>
             |||
           </div>
@@ -23,11 +23,11 @@ const Navbar = () => {
 
         <div className={`list ${open ? "show" : ""}`}>
           <ul>
-            <li>Home</li>
-            <li>Feature</li>
-            <li>Books</li>
-            <li>Categories</li>
-            <li>Contact</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/feature">Feature</Link></li>
+            <li><Link to="/product">Products</Link></li>
+            <li><Link to="/categories">Categories</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
