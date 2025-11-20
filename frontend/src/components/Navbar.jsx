@@ -32,10 +32,12 @@ const Navbar = () => {
         </div>
 
         <div className={`social-icon ${open ? "show" : ""}`}>
-          <ul>
-            <li>F</li>
-            <li>W</li>
-            <li>L</li>
+           <ul>
+            
+            <li><Link to="/feature">Feature</Link></li>
+            <li><Link to="/product">Products</Link></li>
+            <li><Link to="/categories">Categories</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
       </div>
