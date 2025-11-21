@@ -8,8 +8,8 @@ const Product = () => {
   return (
     <div>
       <Hero />
-      <CosmnaSection />
       <ProductList />
+      <CosmnaSection />
       <Footer />
     </div>
   );
