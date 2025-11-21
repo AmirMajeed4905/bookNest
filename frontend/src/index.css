@@ -103,20 +103,24 @@ body.loaded #loader {
 .social-icon ul {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 30px;
 }
 
-.social-icon ul li {
-    width: 40px;
-    height: 40px;
-    background: orangered;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.social-icon ul li  {
+    font-size: 20px;
+    color: #55555F;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.social-icon ul li a {
+    color: inherit;
+    text-decoration: none;
 }
 
+.social-icon ul li a:hover {
+    color: orangered;
+}
 /* ===================== HERO SECTION ===================== */
 .hero {
     width: 100%;

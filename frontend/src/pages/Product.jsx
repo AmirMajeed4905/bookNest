@@ -10,7 +10,6 @@ const Product = () => {
       <Hero />
       <ProductList />
       <CosmnaSection />
-      <Footer />
     </div>
   );
 };

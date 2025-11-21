@@ -16,7 +16,6 @@ const Home = () => {
       <FeaturedBooks />
       <Testimonials />
       <Newsletter />
-     <Footer/>
     </div>
   );
 };

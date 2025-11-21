@@ -12,7 +12,7 @@ import book3 from "../assets/book3.jpg";
 const books = [
   { img: book1, title: "Book One", author: "Author A" },
   { img: book2, title: "Book Two", author: "Author B" },
-  { img: book3, title: "Book Three", author: "Author C" },
+  { img: book1, title: "Book Three", author: "Author C" },
   { img: book1, title: "Book Four", author: "Author D" }, // placeholder
   { img: book2, title: "Book Five", author: "Author E" }, // placeholder
 ];

@@ -15,10 +15,10 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#collections">Collections</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="feature">Features</a></li>
+            <li><a href="collections">Collections</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
 
