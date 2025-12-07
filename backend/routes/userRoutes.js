@@ -4,7 +4,14 @@ const User = require('../models/userModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { auth } = require('../middleware/auth');
-
+// Get current user
+router.get('/me', auth, async (req, res) => {
+  try {
+    res.status(200).json({ user: req.user });
+  } catch (err) {
+    res.status(500).json({ message: 'Server error', error: err.message });
+  }
+});
 // Register
 router.post('/register', async (req, res) => {
     try {
@@ -90,6 +97,11 @@ router.get('/', auth, async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: 'Server error', error: error.message });
     }
+});
+
+router.post('/logout', (req, res) => {
+  res.cookie('token', '', { maxAge: 0, httpOnly: true });
+  res.status(200).json({ message: 'Logged out' });
 });
 
 module.exports = router;

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductList from '../components/Productlist'
+// import ProductList from '../components/Productlist'
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <p className="text-lg text-gray-700 mb-4">
         AM-DEV is a platform dedicated to providing high-quality web development resources, tutorials, and tools to help developers of all skill levels enhance their skills and build amazing web applications.
       </p>
-      <ProductList />
+      {/* <ProductList /> */}
     </div>
   )
 }

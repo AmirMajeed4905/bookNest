@@ -1,12 +1,14 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import CardList from '../components/CardList'
+
+import BookList from '../components/BookList'
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <CardList />
+     
+      <BookList />
     </div>
   )
 }

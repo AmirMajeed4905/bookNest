@@ -12,6 +12,8 @@ const PORT = process.env.PORT || 5000;
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/uploads', express.static('uploads'));
+
 app.use(cookieParser());
 app.use(cors({
     origin: process.env.CORS_ORIGIN || '*',
@@ -22,7 +24,6 @@ app.use(cors({
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/books', require('./routes/bookRoutes'));
-
 app.get('/', (req, res) => res.send('Hello World!'));
 
 // Error handling
